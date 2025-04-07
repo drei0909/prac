@@ -1,11 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gian Hub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f3f4f6;
+      color: #333;
+      padding: 50px 50px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 2px;
+    }
+
+    header p {
+      font-size: rem;
+      color: #888;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0077b6;
+      padding: 10px 18px;
+      border-radius: 8px;
+      transition: 0.3s ease;
+      font-weight: 500;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+    }
+
+    nav a:hover {
+      background-color: #e0f0ff;
+      transform: scale(1.05);
+    }
+
+    .flex-section {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+      padding: 25px;
+      width: 280px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+      margin-bottom: 11px;
+      color: #0077b6;
+      font-size: 1.3rem;
+    }
+
+    .card p {
+      color: #555;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .plus:hover {
+      transform: rotate(90deg);
+    }
+
+    @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .card {
+        width: 90%;
+      }
+
+      nav {
+        gap: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-    
+
+  <header>
+    <h1>gndrpb</h1>
+    <p>@gnxanpb on Instagram</p>
+  </header>
+
+  <nav>
+    <a href="#">📍 Followings</a>
+    <a href="#">👥 Followers</a>
+    <a href="#">💬 Chat</a>
+    <a href="#">🔔 Notification</a>
+  </nav>
+
+  <div class="flex-section">
+    <div class="card">
+      <h2>📸 Photos</h2>
+      <a href="Snoopy.png">Snoopy</a>
+      
+    </div>
+    <div class="card">
+      <h2>📖 Story</h2>
+      <p>No active stories.</p>
+    </div>
+    <div class="card">
+      <h2>🚩Post</h2>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 gnxanpb | All Rights Reserved
+  </footer>
+
 </body>
 </html>
