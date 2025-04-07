@@ -1,155 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gian Hub</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-    body {
-      background: #f3f4f6;
-      color: #333;
-      padding: 50px 50px;
-    }
+        body {
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
 
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
 
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: bold;
-      margin-bottom: 2px;
-    }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            width: 100%;
+        }
 
-    header p {
-      font-size: rem;
-      color: #888;
-      letter-spacing: 1px;
-    }
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 10px;
+        }
 
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      margin-bottom: 40px;
-      flex-wrap: wrap;
-    }
+        nav ul li {
+            margin-right: 20px;
+        }
 
-    nav a {
-      text-decoration: none;
-      color: #0077b6;
-      padding: 10px 18px;
-      border-radius: 8px;
-      transition: 0.3s ease;
-      font-weight: 500;
-      background-color: #ffffff;
-      border: 1px solid #ddd;
-    }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
 
-    nav a:hover {
-      background-color: #e0f0ff;
-      transform: scale(1.05);
-    }
+        nav ul li a:hover {
+            color: #ff6347;
+        }
 
-    .flex-section {
-      display: flex;
-      gap: 30px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 20px 0;
+        }
 
-    .card {
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(10px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-      border-radius: 12px;
-      padding: 25px;
-      width: 280px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+        .content-box {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            flex: 1;
+            margin: 0 10px;
+        }
 
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
-    }
+        .content-box h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
 
-    .card h2 {
-      margin-bottom: 11px;
-      color: #0077b6;
-      font-size: 1.3rem;
-    }
+        .content-box p {
+            color: #555;
+            font-size: 16px;
+        }
 
-    .card p {
-      color: #555;
-      font-style: italic;
-    }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            margin-top: 20px;
+        }
 
-    footer {
-      text-align: center;
-      margin-top: 60px;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-
-    .plus:hover {
-      transform: rotate(90deg);
-    }
-
-    @media screen and (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      .card {
-        width: 90%;
-      }
-
-      nav {
-        gap: 15px;
-      }
-    }
-  </style>
+    </style>
 </head>
 <body>
+    <header>
+        <h1>gnxanpb</h1>
+    </header>
 
-  <header>
-    <h1>gndrpb</h1>
-    <p>@gnxanpb on Instagram</p>
-  </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-  <nav>
-    <a href="#">📍 Followings</a>
-    <a href="#">👥 Followers</a>
-    <a href="#">💬 Chat</a>
-    <a href="#">🔔 Notification</a>
-  </nav>
-
-  <div class="flex-section">
-    <div class="card">
-      <h2>📸 Photos</h2>
-      <a href="Snoopy.png">Snoopy</a>
-      
+    <div class="content-container">
+        <div class="content-box">
+            <h2>About Me</h2>
+            <p>🚩</p>
+        </div>
+        <div class="content-box">
+            <h2>Latest News</h2>
+            <p>🚩</p>
+        </div>
+        <div class="content-box">
+            <h2>Links</h2>
+            <p>🚩</p>
+            <ul>
+               
+            </ul>
+        </div>
     </div>
-    <div class="card">
-      <h2>📖 Story</h2>
-      <p>No active stories.</p>
-    </div>
-    <div class="card">
-      <h2>🚩Post</h2>
-    </div>
-  </div>
 
-  <footer>
-    &copy; 2025 gnxanpb | All Rights Reserved
-  </footer>
-
+    <footer>
+        <p>&copy; All rights reserved. I did my part.</p>
+    </footer>
 </body>
 </html>
